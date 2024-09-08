@@ -30,7 +30,7 @@ I am a Software Engineer specializing in Ruby on Rails with over 6 years of expe
 
 - :telescope: I’m working as a Software Engineer and contributing to backend development for building web applications.
 - :seedling: Exploring Technical Content Writing.
-- :zap: In my free time, I solve problems, building demo projects, see lessons to improve my self and read tech articles.
+- :zap: In my free time, I solve problems, building demo projects, watch lessons to improve my self and read tech articles.
 - :mailbox: How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-SalehAlhaddad-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
 
 ---
