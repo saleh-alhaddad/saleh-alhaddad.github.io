@@ -16,9 +16,9 @@ layout: default
 </div>
 
 <h1 align="center">
-  مرحبا بك
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
   Welcome
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  مرحبا بك
 </h1>
 
 ---
@@ -55,7 +55,7 @@ I am a Software Engineer specializing in Ruby on Rails with over 6 years of expe
 
 ---
 
-### :writing_hand: Blog Posts :
+### Blog Posts :
 
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
