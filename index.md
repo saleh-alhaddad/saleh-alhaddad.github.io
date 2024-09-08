@@ -15,27 +15,26 @@ layout: default
   </a>
 </div>
 
-<img src="https://komarev.com/ghpvc/?username=your-github-username&style=flat-square&color=blue" alt=""/>
-
 <h1 align="center">
-  hey there
+  مرحبا بك
+  Welcome
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
 
 ---
 
-### :technologist: About Me :
+### About Me :
 
 I am a Software Engineer specializing in Ruby on Rails with over 6 years of experience. I build scalable web applications, craft robust RESTful APIs, and leverage cloud technologies like AWS, Docker, and Kubernetes.
 
-- :telescope: I’m working as a Software Engineer and contributing to backend development for building web applications.
-- :seedling: Exploring Technical Content Writing.
-- :zap: In my free time, I solve problems, building demo projects, watch lessons to improve my self and read tech articles.
-- :mailbox: How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-SalehAlhaddad-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
+- I’m working as a Software Engineer and contributing to backend development for building web applications.
+- Exploring Technical Content Writing.
+- In my free time, I solve problems, building demo projects, watch lessons to improve my self and read tech articles.
+- Contact with me: [![Linkedin Badge](https://img.shields.io/badge/-SalehAlhaddad-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
 
 ---
 
-### :hammer_and_wrench: Languages and Tools :
+### Languages and Tools :
 
 <div align="center">
   <img src="https://github.com/devicons/devicon/blob/master/icons/ruby/ruby-original-wordmark.svg" title="Ruby" alt="Ruby" width="40" height="40"/>&nbsp;
@@ -48,11 +47,11 @@ I am a Software Engineer specializing in Ruby on Rails with over 6 years of expe
 
 ---
 
-### :fire: My Stats :
+### My Stats :
 
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=your-github-username&theme=dark&background=000000)](https://git.io/streak-stats)
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=saleh-alhaddad&theme=dark&background=000000)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=saleh-alhaddad&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
