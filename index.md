@@ -11,7 +11,7 @@
 
 ---
 
-### :man_technologist: About Me
+### About Me
 
 * 🔭 I’m currently working on [Jisr Company](https://www.jisr.net/ar).
 
@@ -29,7 +29,7 @@
 
 ---
 
-### :hammer_and_wrench: Languages and Tools
+### Languages and Tools
 
 <div align="center">
   <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer">
@@ -78,7 +78,7 @@
 
 ---
 
-### :earth_asia: Socials
+### Socials
 
 <div align="center">
   <a target="_blank" href="https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/">
@@ -103,7 +103,7 @@
 
 ---
 
-### :fire: My Stats
+### My Stats
 
 <div id="header" align="center">
   <a target="_blank" href="http://www.github.com/saleh-alhaddad"><img
@@ -124,11 +124,11 @@
 ---
 
 
-### :mailbox: Contact with me [![Linkedin Badge](https://img.shields.io/badge/linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
+### Contact with me [![Linkedin Badge](https://img.shields.io/badge/linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
 
 ---
 
-### :writing_hand: My Blog Posts
+### My Blog Posts
 
 * [TOTP Using Ruby On Rails API GUIDE.](https://salehsalem.medium.com/totp-using-ruby-on-rails-api-guide-d719033ceb64)
 * [Optimizing Ruby on Rails App for High Performance (Part 1).](https://salehsalem.medium.com/optimizing-ruby-on-rails-app-for-high-performance-part-1-1fc7b9ee5c5)
