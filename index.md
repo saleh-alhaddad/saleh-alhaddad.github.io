@@ -93,24 +93,24 @@
   </a>
   <a href="https://salehsalem.medium.com">
     <img src="https://img.shields.io/badge/Medium-red?style=for-the-badge&logo=medium&logoColor=white"
-      alt="Youtube Badge" />
+      alt="Medium Badge" />
   </a>
   <a href="https://dev.to/salehalhaddad01">
     <img src="https://img.shields.io/badge/devto-black?style=for-the-badge&logo=devto&logoColor=white"
-      alt="Twitter Badge" />
+      alt="Dev.to Badge" />
   </a>
   <a href="https://salehalhaddad.hashnode.dev">
     <img src="https://img.shields.io/badge/hashnode-blue?style=for-the-badge&logo=hashnode&logoColor=white"
-      alt="Twitter Badge" />
+      alt="Hashnode Badge" />
 
   </a>
   <a href="https://github.com/saleh-alhaddad">
     <img src="https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white"
-      alt="Twitter Badge" />
+      alt="Github Badge" />
   </a>
-  <a href="stackoverflow.com/users/saleh-alhaddad">
+  <a href="https://stackoverflow.com/users/14273170/saleh-alhaddad">
     <img src="https://img.shields.io/badge/stackoverflow-orange?style=for-the-badge&logo=stackoverflow&logoColor=white"
-      alt="Twitter Badge" />
+      alt="StackoverFlow Badge" />
   </a>
 </div>
 
@@ -140,10 +140,10 @@
 
 ---
 
-### Blog Posts
+### My Blog Posts
 
 * [TOTP Using Ruby On Rails API GUIDE.](https://salehsalem.medium.com/totp-using-ruby-on-rails-api-guide-d719033ceb64)
-* [Optimizing Ruby on Rails App for High Performance (Part 1).](https://salehsalem.medium.com/optimizing-ruby-on-rails-app-for-high-performance-part-1-1fc7b9ee5c5)
+* [Optimizing Ruby on Rails App for High Performance (Part 1).](https://salehsalem.medium.com optimizing-ruby-on-rails-app-for-high-performance-part-1-1fc7b9ee5c5)
 * [How to Benchmark Your Ruby Code for Performance Optimization.](https://salehsalem.medium.com/how-to-benchmark-your-ruby-code-for-performance-optimization-608ab916f5d0)
 
 ---
