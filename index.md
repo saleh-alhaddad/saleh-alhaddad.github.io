@@ -1,15 +1,14 @@
 <div align="center">
   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW9qMXhrbDAzdXd6Z3Nrd3V5and0a2F2bGN2cXVua2dwczhnbGtxZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/3SL41WtN5l9DNdPJGs/giphy.gif" width="200" />
-  <h1 align="center">
-    <img
-      src="https://readme-typing-svg.herokuapp.com/?font=Cairo&size=35&center=true&vCenter=true&width=500&height=70&duration=3000&lines=👋+مرحبا+بك;Hi+There!+👋;+I'm+Saleh+Salem+Alhaddad!;" />
+  <h1>
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Cairo&size=35&center=true&vCenter=true&width=500&height=70&duration=3000&lines=👋+مرحبا+بك;Hi+There!+👋;+I'm+Saleh+Salem+Alhaddad!;" />
   </h1>
   <h2><strong>Software Engineer</strong></h2>
 </div>
 
 ---
 
-### About Me:
+### About Me
 
 💼 I’m currently working as a Ruby on Rails Backend Developer, contributing to both web applications and API
 integrations.
@@ -84,8 +83,7 @@ technical documentation.
     <a href="https://salehalhaddad.hashnode.dev">
     <img src="https://img.shields.io/badge/hashnode-blue?style=for-the-badge&logo=hashnode&logoColor=white" alt="Twitter Badge"/>
   </a>
-    </a>
-    <a href="https://github.com/saleh-alhaddad">
+  <a href="https://github.com/saleh-alhaddad">
     <img src="https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white" alt="Twitter Badge"/>
   </a>
 </div>
@@ -113,14 +111,21 @@ technical documentation.
 ---
 
 ### Contact with me
-[![Linkedin
-Badge](https://img.shields.io/badge/-SalehAlhaddad-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
+[![Linkedin Badge](https://img.shields.io/badge/linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
 
-![](https://komarev.com/ghpvc/?username=saleh-alhaddad&style=flat-square)
 ---
 
-### Blog Posts:
+### Blog Posts
 
 - [TOTP Using Ruby On Rails API GUIDE](https://salehsalem.medium.com/totp-using-ruby-on-rails-api-guide-d719033ceb64)
 - [Optimizing Ruby on Rails App for High Performance (Part 1)](https://salehsalem.medium.com/optimizing-ruby-on-rails-app-for-high-performance-part-1-1fc7b9ee5c5)
 - [How to Benchmark Your Ruby Code for Performance Optimization](https://salehsalem.medium.com/how-to-benchmark-your-ruby-code-for-performance-optimization-608ab916f5d0)
+
+---
+
+<h2>
+  Github Vistors
+  
+  ![Visitor Count](https://profile-counter.glitch.me/saleh-alhaddad/count.svg)
+</h2>
+  
