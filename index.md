@@ -11,7 +11,7 @@
 
 ---
 
-### About Me
+### :man_technologist: About Me :
 
 * 🔭 I’m currently working on [Jisr Company](https://www.jisr.net/ar).
 
@@ -25,7 +25,7 @@
 
 * 🎯 I'm passionate about mentoring others and actively contributing to the open-source community through PRs and technical documentation.
 
-* ⚡ I balance my career growth with a dedication to be update active in the tech community!.
+* ⚡ I balance my career growth with a dedication to be update and active in the tech community!.
 
 ---
 
