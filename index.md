@@ -25,7 +25,7 @@
 
 * 🎯 I'm passionate about mentoring others and actively contributing to the open-source community through PRs and technical documentation.
 
-* ⚡ Fun fact: I balance my career growth with a dedication to lifelong learning and staying active in the tech community!.
+* ⚡ I balance my career growth with a dedication to be update active in the tech community!.
 
 ---
 
@@ -61,7 +61,7 @@
   </a><a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img
       src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40" /> 
   </a>
-    </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img
+    <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img
       src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40" />
   </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
