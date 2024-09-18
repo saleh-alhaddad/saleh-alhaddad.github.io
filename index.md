@@ -27,6 +27,9 @@
 
 * ⚡ I balance my career growth with a dedication to be update and active in the tech community!.
 
+* 📚 I am learning Python and Django to enhance my web development skills and moving with growing in technology.
+
+* 🤖 I am practicing integration with AI platforms, using Python.
 ---
 
 ### Languages and Tools
@@ -74,6 +77,12 @@
   <a href="https://redis.io" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40" /> 
   </a>
+  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> 
+  </a>
+  <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="django" width="40" height="40" /> 
+  </a>  
 </div>
 
 ---
@@ -125,6 +134,12 @@
 
 
 ### Contact with me [![Linkedin Badge](https://img.shields.io/badge/linkedin-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/)
+
+---
+
+### My Contributions In Open Source:
+
+* [Ruby on Rails: Correctly adjusted the existing join types being overridden in the where.associated method within the Rails Framework.](https://github.com/rails/rails/pull/51078)
 
 ---
 
