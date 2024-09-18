@@ -30,6 +30,7 @@
 * 📚 I am learning Python and Django to enhance my web development skills and moving with growing in technology.
 
 * 🤖 I am practicing integration with AI platforms, using Python.
+
 ---
 
 ### Languages and Tools
