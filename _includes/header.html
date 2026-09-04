@@ -1,0 +1,13 @@
+<!-- Top bar: mono wordmark + page nav -->
+<header>
+  <div class="wrap bar">
+    <a class="who" href="{{ '/' | relative_url }}"><b>SA</b> · {{ site.data.author.name | upcase }}</a>
+    <nav aria-label="Main navigation">
+      {% for item in site.data.navigation.main %}
+      <a href="{{ item.url | relative_url }}"
+         {% if page.url == item.url or (item.url != '/' and page.url contains item.url) %}class="active"{% endif %}>{{ item.title | upcase }}</a>
+      {% endfor %}
+      <a href="{{ site.data.social.github.url }}" target="_blank" rel="noopener noreferrer">GITHUB</a>
+    </nav>
+  </div>
+</header>

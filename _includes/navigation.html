@@ -1,0 +1,15 @@
+<!-- Modern Quick Navigation -->
+<nav class="quick-navigation" aria-label="Quick Navigation">
+  <div class="quick-nav-container">
+    <h3 class="quick-nav-title">Quick Navigation</h3>
+    <div class="quick-nav-links">
+      {% for item in site.data.navigation.quick %}
+      <a href="{{ item.url | relative_url }}" 
+         class="quick-nav-link {% if page.url == item.url or (item.url != '/' and page.url contains item.url) %}active{% endif %}">
+        <i class="{{ item.icon }}"></i>
+        <span>{{ item.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

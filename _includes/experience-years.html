@@ -1,0 +1,22 @@
+{%- comment -%}
+  Whole years of experience since site.data.author.career_start, computed at BUILD time.
+  Emits a bare integer (e.g. "8"); the "+" is written in the markup, not here.
+
+  This is only the no-JavaScript fallback: assets/js/modern.js recomputes every
+  .calc-years element on load, so the figure stays right between site builds.
+
+  Usage:
+    <span class="calc-years" data-career-start="{{ site.data.author.career_start }}">{% include experience-years.html %}</span>+ years
+{%- endcomment -%}
+{%- assign _start = site.data.author.career_start -%}
+{%- assign _sy = _start    | date: "%Y" | times: 1 -%}
+{%- assign _sm = _start    | date: "%m" | times: 1 -%}
+{%- assign _sd = _start    | date: "%d" | times: 1 -%}
+{%- assign _ny = site.time | date: "%Y" | times: 1 -%}
+{%- assign _nm = site.time | date: "%m" | times: 1 -%}
+{%- assign _nd = site.time | date: "%d" | times: 1 -%}
+{%- assign _years  = _ny | minus: _sy -%}
+{%- assign _months = _nm | minus: _sm -%}
+{%- if _nd < _sd -%}{%- assign _months = _months | minus: 1 -%}{%- endif -%}
+{%- if _months < 0 -%}{%- assign _years = _years | minus: 1 -%}{%- endif -%}
+{{- _years -}}

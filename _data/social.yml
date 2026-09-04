@@ -1,0 +1,30 @@
+# Social media links and professional profiles
+github:
+  url: "https://github.com/saleh-alhaddad"
+  username: "saleh-alhaddad"
+  icon: "fab fa-github"
+
+linkedin:
+  url: "https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/"
+  username: "saleh-salem-alhaddad"
+  icon: "fab fa-linkedin"
+
+medium:
+  url: "https://salehsalem.medium.com"
+  username: "salehsalem"
+  icon: "fab fa-medium"
+
+devto:
+  url: "https://dev.to/salehalhaddad01"
+  username: "salehalhaddad01"
+  icon: "fab fa-dev"
+
+hashnode:
+  url: "https://salehalhaddad.hashnode.dev"
+  username: "salehalhaddad"
+  icon: "fas fa-rss"
+
+twitter:
+  url: "https://twitter.com/saleh_alhaddad01"
+  username: "saleh_alhaddad01"
+  icon: "fab fa-twitter"

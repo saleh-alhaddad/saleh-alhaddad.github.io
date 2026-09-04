@@ -1,0 +1,134 @@
+# =============================================================================
+# SITE CONFIGURATION FOR GITHUB PAGES
+# =============================================================================
+
+# Basic Site Information
+title: "Saleh Alhaddad | Senior Backend Engineer"
+description: "Senior Backend Engineer specializing in Ruby on Rails, payment systems, and billing infrastructure. Rails core contributor."
+
+# Social sharing title (Open Graph / Twitter Card). Kept separate from `title`
+# so share cards read as a standalone headline instead of "Page - Site".
+og_title: "Saleh Alhaddad | Senior Backend Engineer, Rails & Payments"
+
+# GitHub Pages Configuration
+url: "https://saleh-alhaddad.github.io"      # Your GitHub Pages URL
+baseurl: ""                                   # Leave empty for user pages
+repository: "saleh-alhaddad/saleh-alhaddad.github.io"
+
+# Author Information (legacy support for themes)
+author:
+  name: "Saleh Salem Alhaddad"
+  email: "salehalhaddad010@gmail.com"
+
+# =============================================================================
+# BUILD SETTINGS
+# =============================================================================
+
+# Markdown and Syntax Highlighting
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Sass/SCSS Configuration
+sass:
+  style: compressed        # Minify CSS for production
+  quiet_deps: true        # Suppress warnings
+  sass_dir: _sass
+
+# =============================================================================
+# PLUGINS (GitHub Pages Compatible Only)
+# =============================================================================
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# =============================================================================
+# COLLECTIONS & CONTENT
+# =============================================================================
+
+# Enable collections if needed in the future
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "modern"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "modern"
+      author: "Saleh Salem Alhaddad"
+
+# =============================================================================
+# NAVIGATION (Legacy - moved to _data/navigation.yml)
+# =============================================================================
+
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Articles
+    url: /articles
+  - title: Contact
+    url: /contact
+
+# =============================================================================
+# BUILD EXCLUSIONS
+# =============================================================================
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .DS_Store
+  - "*.backup"
+
+# =============================================================================
+# PERFORMANCE & SEO
+# =============================================================================
+
+# Timezone
+timezone: Asia/Aden
+
+# Encoding
+encoding: utf-8
+
+# Incremental build (faster development)
+incremental: false
+
+# Live reload port for development
+livereload_port: 35729
+
+# =============================================================================
+# GITHUB PAGES SPECIFIC SETTINGS
+# =============================================================================
+
+# GitHub Pages safe mode (automatically enabled)
+safe: true
+
+# Disable custom plugins (GitHub Pages restriction)
+whitelist:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

@@ -1,0 +1,28 @@
+# Site author information
+name: "Saleh Salem Alhaddad"
+bio: "Senior Backend Engineer"
+tagline: "Senior Backend Engineer | Wallet, Payments & Billing"
+location: "Yemen, Hadramout"
+
+# Career start date: the single source of truth for "years of experience".
+# Rendered by _includes/experience-years.html at build time and refreshed in the
+# browser by updateExperienceYears() in assets/js/modern.js. Change it here only.
+career_start: "2018-06-01"
+avatar: "/assets/images/profile.jpg"
+
+# Contact information
+email: "salehalhaddad010@gmail.com"
+
+# Professional summary
+summary: >
+  Senior Backend Engineer specializing in Ruby on Rails, payment systems, billing
+  infrastructure, and subscription management. Reduced payment failures through Chargebee
+  retry optimization and idempotency, removed duplicate PostgreSQL indexes to improve write
+  performance, and migrated reports to async processing. Rails core contributor (PR #51078).
+
+# Current role
+current_role:
+  position: "Senior Backend Engineer"
+  company: "Jisr"
+  company_url: "https://www.jisr.net/ar"
+  duration: "Current"

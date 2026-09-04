@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Site Head: Meta tags, fonts, external resources -->
+  {% include head.html %}
+
+<body>
+
+  <!-- Top bar -->
+  {% include header.html %}
+
+  <!-- Main Content Area -->
+  <main class="main" role="main">
+    {{ content }}
+  </main>
+
+  <!-- Site Footer -->
+  {% include footer.html %}
+
+  <!-- JavaScript Assets -->
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* =========================================================================
+   Dark pass-card design system
+   Near-black canvas, money-gold accent, Schibsted Grotesk display,
+   IBM Plex Mono for ledger labels. Committed dark look (no theme toggle).
+   ========================================================================= */
+:root{
+  --bg:#0C0C0E;
+  --panel:#151518;
+  --panel-2:#1B1B1F;
+  --ink:#EFEFF1;
+  --soft:#9A9AA3;
+  --line:#26262B;
+  --amber:#F2A33C;
+  --amber-deep:#C77E1D;
+  --amber-tint:rgba(242,163,60,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);
+  font-family:"Inter",system-ui,sans-serif;font-size:16px;line-height:1.65}
+img{max-width:100%}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.28em;color:var(--soft)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:3px}
+::selection{background:var(--amber);color:#171003}
+
+/* ── top bar ─────────────────────────────────────────────────────────── */
+.bar{display:flex;justify-content:space-between;align-items:center;padding:26px 0;gap:14px;flex-wrap:wrap}
+.bar .who{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;
+  color:var(--ink);text-decoration:none;white-space:nowrap}
+.bar .who b{color:var(--amber);font-weight:500}
+.bar nav{display:flex;gap:24px;flex-wrap:wrap}
+.bar nav a{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;
+  color:var(--soft);text-decoration:none}
+.bar nav a:hover,.bar nav a.active{color:var(--amber)}
+
+/* ── hero ────────────────────────────────────────────────────────────── */
+.hero{padding:92px 0 56px}
+.hero .hey{font-family:"Schibsted Grotesk",sans-serif;font-weight:500;
+  font-size:clamp(20px,3vw,26px);color:var(--soft);margin-top:16px}
+.hero .hey b{color:var(--ink);font-weight:700}
+.hero h1{font-family:"Schibsted Grotesk",sans-serif;font-weight:800;
+  font-size:clamp(38px,7.4vw,84px);line-height:1.02;letter-spacing:-.03em;margin-top:18px;max-width:15ch}
+.hero h1 em{font-style:italic;font-weight:700;color:var(--amber)}
+.hero .sub{margin-top:28px;color:var(--soft);font-size:17px;max-width:58ch}
+.hero .sub strong{color:var(--ink);font-weight:500}
+/* smaller page heroes (about/articles/contact) */
+.hero.compact{padding:72px 0 30px}
+.hero.compact h1{font-size:clamp(34px,5.6vw,60px)}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  border:1px solid var(--line);color:var(--soft);padding:9px 16px;border-radius:4px;white-space:nowrap}
+.chip:hover{border-color:var(--amber);color:var(--amber)}
+
+.cta-row{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+.btn{font-family:"IBM Plex Mono",monospace;font-size:13px;text-decoration:none;
+  padding:12px 22px;border-radius:6px;letter-spacing:.03em;display:inline-block}
+.btn.primary{background:var(--amber);color:#171003}
+.btn.primary:hover{background:var(--amber-deep)}
+.btn.ghost{color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+
+/* ── pass card ───────────────────────────────────────────────────────── */
+.passwrap{padding:64px 0 30px;position:relative}
+.pass{position:relative;max-width:640px;margin:34px auto 0;
+  background:linear-gradient(135deg,var(--amber),var(--amber-deep));
+  border-radius:14px;padding:34px 38px;color:#171003;
+  box-shadow:0 24px 80px rgba(242,163,60,.14)}
+.pass .ph{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:18px;letter-spacing:.22em;margin-bottom:22px}
+.pass table{border-collapse:collapse;font-family:"IBM Plex Mono",monospace;font-size:13.5px;width:100%}
+.pass td{padding:6px 0;vertical-align:top}
+.pass td.k{width:150px;letter-spacing:.12em;opacity:.62}
+.pass td.v{font-weight:500;letter-spacing:.04em}
+.pass .code{margin-top:22px;border-top:1.5px dashed rgba(23,16,3,.35);padding-top:14px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.42em;opacity:.68;overflow-wrap:anywhere}
+.note{position:absolute;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--soft)}
+.n1{top:36px;left:6%}
+.n2{top:96px;right:4%}
+.n3{bottom:-6px;left:12%}
+.n4{bottom:44px;right:9%}
+@media(max-width:800px){.note{display:none}}
+
+/* ── sections ────────────────────────────────────────────────────────── */
+section{padding:72px 0 8px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid.cols-3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:900px){.grid.cols-3{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.grid,.grid.cols-3{grid-template-columns:1fr}}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+  padding:30px 30px 26px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--amber);transform:translateY(-2px)}
+.card .t{font-family:"Schibsted Grotesk",sans-serif;font-weight:700;font-size:19px;letter-spacing:.02em}
+.card .d{color:var(--soft);font-size:14.5px;margin-top:10px;line-height:1.6}
+.card ul{margin:12px 0 0 18px;color:var(--soft);font-size:14.5px;line-height:1.7}
+.card ul li::marker{color:var(--amber)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  color:var(--amber);background:var(--amber-tint);padding:4px 10px;border-radius:3px;white-space:nowrap}
+
+/* ── experience panels (about) ───────────────────────────────────────── */
+.role{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+  padding:34px;margin-bottom:18px}
+.role .head{display:flex;justify-content:space-between;gap:18px;align-items:baseline;flex-wrap:wrap}
+.role .t{font-family:"Schibsted Grotesk",sans-serif;font-weight:700;font-size:22px;letter-spacing:-.01em}
+.role .co{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;color:var(--amber);margin-top:6px}
+.role time{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;color:var(--soft);white-space:nowrap}
+.role ul{margin:20px 0 0 18px;color:var(--soft);font-size:15px;line-height:1.75}
+.role ul li::marker{color:var(--amber)}
+.role .tags{margin-top:22px}
+
+/* ── open source band ────────────────────────────────────────────────── */
+.oss{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:44px;
+  display:flex;justify-content:space-between;gap:28px;align-items:center;flex-wrap:wrap}
+.oss h3{font-family:"Schibsted Grotesk",sans-serif;font-weight:700;
+  font-size:clamp(22px,3.4vw,30px);letter-spacing:-.015em;max-width:22ch}
+.oss h3 code{font-family:"IBM Plex Mono",monospace;font-size:.82em;color:var(--amber)}
+.oss p{color:var(--soft);font-size:15px;margin-top:10px;max-width:48ch}
+.oss ul{margin:14px 0 0 18px;color:var(--soft);font-size:14.5px;line-height:1.7}
+.oss ul li::marker{color:var(--amber)}
+.badge{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;color:#171003;
+  background:var(--amber);padding:12px 20px;border-radius:99px;white-space:nowrap;text-decoration:none}
+.badge:hover{background:var(--amber-deep)}
+
+/* ── writing rows ────────────────────────────────────────────────────── */
+.post{display:flex;justify-content:space-between;gap:22px;align-items:baseline;
+  padding:20px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.post:last-of-type{border-bottom:none}
+.post:hover .t{color:var(--amber)}
+.post .t{font-family:"Schibsted Grotesk",sans-serif;font-weight:700;font-size:18px}
+.post .d{color:var(--soft);font-size:14px;margin-top:4px}
+.post .cat{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;
+  color:var(--soft);white-space:nowrap}
+@media(max-width:560px){.post{flex-direction:column;gap:8px}}
+
+/* ── ledger rows (contact / facts) ───────────────────────────────────── */
+.ledger .row{display:flex;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ledger .row:last-child{border-bottom:none}
+.ledger .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.1em;color:var(--soft);white-space:nowrap}
+.ledger .dots{flex:1;border-bottom:1.5px dotted var(--line);transform:translateY(-4px)}
+.ledger .v{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.05em;
+  color:var(--ink);white-space:nowrap;text-decoration:none}
+a.v:hover{color:var(--amber)}
+.ledger .v .ok{color:var(--amber)}
+@media(max-width:560px){
+  .ledger .row{flex-wrap:wrap}
+  .ledger .dots{display:none}
+  .ledger .v{white-space:normal}
+}
+
+/* ── footer ──────────────────────────────────────────────────────────── */
+footer{margin-top:90px;border-top:1px solid var(--line);padding:44px 0 60px}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media(max-width:720px){.cols{grid-template-columns:1fr 1fr}}
+.col .l{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.22em;color:var(--soft);margin-bottom:8px}
+.col .v,.col a{font-size:14.5px;color:var(--ink);text-decoration:none;display:inline-block}
+.col a{margin-bottom:4px}
+.col a:hover{color:var(--amber)}
+.closing{margin-top:56px;text-align:center;font-family:"Schibsted Grotesk",sans-serif;
+  font-weight:500;font-size:15px;color:var(--soft)}
+
+/* ── load animation ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference){
+  .rise{opacity:0;transform:translateY(10px);animation:rise .6s ease forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+}

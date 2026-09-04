@@ -1,0 +1,230 @@
+---
+layout: modern
+title: About
+description: Senior Backend Engineer building wallet and payment systems. Specializing in Ruby on Rails, fintech infrastructure, and billing platforms. Rails core contributor.
+og_title: About Saleh Alhaddad | Senior Backend Engineer
+---
+
+<div class="wrap">
+  <!-- Hero -->
+  <div class="hero compact">
+    <p class="eyebrow rise">ABOUT ME</p>
+    <h1 class="rise" style="animation-delay:.08s">Senior Backend Engineer | <em>Wallet, Payments &amp; Billing</em></h1>
+    <p class="sub rise" style="animation-delay:.16s">
+      Building the backend systems that move real money: wallet infrastructure, payment processing,
+      subscription billing, and the PostgreSQL work that keeps it reliable.
+    </p>
+    <div class="chips rise" style="animation-delay:.24s">
+      <span class="chip">WALLET SYSTEMS</span>
+      <span class="chip">PAYMENT INFRASTRUCTURE</span>
+      <span class="chip">POSTGRESQL SPECIALIST</span>
+      <span class="chip">TECHNICAL WRITER</span>
+    </div>
+  </div>
+
+  <!-- Professional summary -->
+  <section id="profile">
+    <div class="sec-head"><span class="eyebrow">PROFILE</span></div>
+    <div class="oss">
+      <div>
+        <p>
+          Senior Backend Engineer specializing in Ruby on Rails, wallet systems, payment
+          infrastructure, and billing platforms. Currently building wallet and payment processing
+          systems in a fintech context. Previously owned the full money path: subscriptions, trials,
+          add-ons, invoicing, bank-transfer rails, dunning, and churn recovery, plus the
+          integrations that make it work (Chargebee, HubSpot, NetSuite, ZATCA, Segment).
+          Rails core contributor (PR #51078).
+        </p>
+        <ul>
+          <li>Build wallet infrastructure and payment processing systems: payment order management, transfer synchronization, real-time reconciliation, and idempotency guards</li>
+          <li>Previously built the full billing stack: Chargebee subscription billing, Virtual IBAN bank transfers, failed-payment recovery (dunning), and churn-save funnels</li>
+          <li>PostgreSQL specialist: index optimization, query tuning, partial indexes for soft-deleted models, and cache invalidation strategies</li>
+          <li>Active Rails core contributor and technical writer sharing backend and payment engineering lessons</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="sec-head">
+      <span class="eyebrow">EXPERIENCE</span>
+      <span class="eyebrow" style="letter-spacing:.14em"><span class="calc-years" data-career-start="{{ site.data.author.career_start }}">{% include experience-years.html %}</span>+ YEARS</span>
+    </div>
+
+    <article class="role">
+      <div class="head">
+        <div>
+          <div class="t">Senior Software Engineer</div>
+          <div class="co">JISR</div>
+        </div>
+        <time>JAN 2026 – PRESENT</time>
+      </div>
+      <ul>
+        <li>Build wallet infrastructure and payment processing systems: payment order management, wallet inquiries, transfer synchronization, and real-time reconciliation</li>
+        <li>Own payment infrastructure: retry optimization with idempotency implementation, significantly reducing payment failures</li>
+        <li>Design webhook processing systems for payment providers and CRM integrations</li>
+        <li>Conduct code reviews and mentor engineers on payment system best practices</li>
+        <li>Drive PostgreSQL performance: audit and remove duplicate indexes, improving write performance</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">WALLETS</span><span class="tag">RUBY ON RAILS</span><span class="tag">POSTGRESQL</span>
+        <span class="tag">WEBHOOKS</span><span class="tag">IDEMPOTENCY</span><span class="tag">AWS</span>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="head">
+        <div>
+          <div class="t">Software Engineer</div>
+          <div class="co">JISR</div>
+        </div>
+        <time>JAN 2021 – DEC 2025</time>
+      </div>
+      <ul>
+        <li>Built configuration-driven trial management system for subscription billing</li>
+        <li>Designed and shipped the subscription cancellation and retention funnel end to end</li>
+        <li>Engineered bank-transfer payment rails with per-organization Virtual IBAN provisioning across two banking providers with idempotent issuance and graduated retry</li>
+        <li>Designed event-sourced subscription audit log with jsonb snapshots, partial composite indexes, and async SQS writes</li>
+        <li>Implemented dunning pipeline for failed-payment recovery with automated offline-billing fallback and full state-transition history</li>
+        <li>Integrated Chargebee subscription billing with webhook processing and automated seat-count reconciliation</li>
+        <li>Built bidirectional HubSpot CRM sync across trial and paid lifecycle with pre-flight validation</li>
+        <li>Implemented Segment analytics pipeline delivered over SQS with daily and weekly reconciliation syncs</li>
+        <li>Migrated reports from synchronous to async processing via AWS SQS, eliminating timeout errors</li>
+        <li>Built automated invoice generation with NetSuite and ZATCA e-invoicing compliance</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">RUBY ON RAILS</span><span class="tag">CHARGEBEE</span><span class="tag">AWS SQS</span>
+        <span class="tag">SEGMENT</span><span class="tag">HUBSPOT</span><span class="tag">REDIS</span><span class="tag">RSPEC</span>
+      </div>
+    </article>
+
+    <article class="role">
+      <div class="head">
+        <div>
+          <div class="t">Software Engineer</div>
+          <div class="co">CLICKAPPS</div>
+        </div>
+        <time>JUN 2018 – DEC 2020</time>
+      </div>
+      <ul>
+        <li>Designed and built robust backend logic for web applications</li>
+        <li>Ensured high code quality through comprehensive testing and systematic version control</li>
+        <li>Contributed to API development and deployment automation processes</li>
+        <li>Enhanced application performance by optimizing database queries and job processing</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">RUBY ON RAILS</span><span class="tag">POSTGRESQL</span><span class="tag">REDIS</span>
+        <span class="tag">AWS EC2</span><span class="tag">CAPISTRANO</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- Open source -->
+  <section id="oss">
+    <div class="sec-head"><span class="eyebrow">OPEN SOURCE</span></div>
+    <div class="oss">
+      <div>
+        <h3>Fixed <code>where.associated</code> join type override in Rails core.</h3>
+        <p>
+          A bug in ActiveRecord silently overrode existing join types in complex queries.
+          The fix preserves what you wrote (INNER JOIN vs LEFT OUTER JOIN) based on existing scope joins.
+        </p>
+        <ul>
+          <li>Consistent SQL for complex association filtering</li>
+          <li>Preserves join types when using <code class="mono">left_joins</code> with <code class="mono">where.associated</code></li>
+          <li>More predictable query behavior for every app on Rails</li>
+        </ul>
+      </div>
+      <a class="badge" href="https://github.com/rails/rails/pull/51078" target="_blank" rel="noopener">PR #51078 · MERGED FEB 2024</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="sec-head"><span class="eyebrow">CORE SKILLS</span></div>
+    <div class="grid">
+      <div class="card">
+        <div class="t">Wallet, Payment &amp; Billing</div>
+        <ul>
+          <li><strong>Wallet systems</strong>: balance operations, wallet inquiries, transfer sync</li>
+          <li><strong>Payment processing</strong>: order management, real-time reconciliation</li>
+          <li><strong>Fintech infrastructure</strong>: payment reliability patterns, idempotency guards</li>
+          <li><strong>Chargebee</strong>: subscription billing, retry logic, webhook processing</li>
+          <li><strong>Virtual IBAN</strong>: bank transfer payment rails</li>
+          <li><strong>Reconciliation</strong>: automated matching of internal vs provider records</li>
+          <li><strong>Webhook processing</strong>: signature verification, idempotent handlers</li>
+          <li><strong>Dunning</strong>: failed payment recovery pipelines</li>
+          <li><strong>HubSpot</strong>: bidirectional CRM sync</li>
+          <li><strong>NetSuite / ZATCA</strong>: e-invoicing regulatory compliance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="t">Languages &amp; Frameworks</div>
+        <ul>
+          <li><strong>Ruby</strong>: advanced proficiency, <span class="calc-years" data-career-start="{{ site.data.author.career_start }}">{% include experience-years.html %}</span>+ years in production</li>
+          <li><strong>Ruby on Rails</strong>: expert level, specializing in backend development</li>
+          <li><strong>RESTful APIs</strong>: design and implementation of scalable APIs</li>
+          <li><strong>MVC architecture</strong>: clean, maintainable application structure</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="t">Databases &amp; Performance</div>
+        <ul>
+          <li><strong>PostgreSQL</strong>: advanced optimization and tuning</li>
+          <li><strong>MySQL</strong>: production database management</li>
+          <li><strong>Redis</strong>: caching and session management</li>
+          <li><strong>Performance</strong>: query optimization and database tuning</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="t">Cloud &amp; Infrastructure</div>
+        <ul>
+          <li><strong>AWS</strong>: EC2, S3, SQS, RDS deployment and management</li>
+          <li><strong>CI/CD</strong>: pipeline setup and deployment automation</li>
+          <li><strong>Docker</strong>: containerization and orchestration</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="t">Testing &amp; Quality</div>
+        <ul>
+          <li><strong>RSpec</strong>: comprehensive test suite development</li>
+          <li><strong>TDD</strong>: quality-first development approach</li>
+          <li><strong>Code reviews</strong>: maintaining high code quality standards</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="t">Background Processing &amp; Tools</div>
+        <ul>
+          <li><strong>Sidekiq / Resque</strong>: background job processing</li>
+          <li><strong>Third-party APIs</strong>: integration and management</li>
+          <li><strong>Git, GitHub, GitLab</strong>: version control and collaboration</li>
+          <li><strong>Mentorship</strong>: code reviews, team collaboration, developer guidance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & languages -->
+  <section id="education">
+    <div class="sec-head"><span class="eyebrow">EDUCATION &amp; LANGUAGES</span></div>
+    <div class="ledger">
+      <div class="row">
+        <span class="k">DEGREE</span><span class="dots"></span>
+        <span class="v">B.SC. INFORMATION TECHNOLOGY</span>
+      </div>
+      <div class="row">
+        <span class="k">UNIVERSITY</span><span class="dots"></span>
+        <span class="v">ADEN UNIVERSITY · FACULTY OF ENGINEERING</span>
+      </div>
+      <div class="row">
+        <span class="k">ARABIC</span><span class="dots"></span>
+        <span class="v">NATIVE</span>
+      </div>
+      <div class="row">
+        <span class="k">ENGLISH</span><span class="dots"></span>
+        <span class="v">PROFESSIONAL WORKING PROFICIENCY</span>
+      </div>
+    </div>
+  </section>
+</div>

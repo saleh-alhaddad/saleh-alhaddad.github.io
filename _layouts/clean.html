@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+  <!-- Site Head: Meta tags, fonts, external resources -->
+  {% include head.html %}
+
+<body>
+  
+  <!-- Loading Screen Animation -->
+  {% include loading-screen.html %}
+
+  <!-- Main Site Navigation -->
+  {% include header.html %}
+
+  <!-- Main Content Area -->
+  <main class="main" role="main">
+    {{ content }}
+  </main>
+
+  <!-- Social Media Sidebar Links -->
+  {% include social-sidebar.html %}
+
+  <!-- Site Footer -->
+  {% include footer.html %}
+
+  <!-- JavaScript Assets -->
+  <script src="{{ '/assets/js/modern.js' | relative_url }}"></script>
+
+</body>
+</html>

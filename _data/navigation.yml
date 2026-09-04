@@ -1,0 +1,49 @@
+# Site navigation configuration
+# Main navigation items that appear in the header
+main:
+  - title: "Home"
+    url: "/"
+    icon: "fas fa-home"
+    number: "01"
+
+  - title: "About"
+    url: "/about"
+    icon: "fas fa-user"
+    number: "02"
+
+  - title: "Articles"
+    url: "/articles"
+    icon: "fas fa-blog"
+    number: "03"
+
+  - title: "Contact"
+    url: "/contact"
+    icon: "fas fa-envelope"
+    number: "04"
+
+# External links that appear in navigation
+external:
+  - title: "GitHub"
+    url: "https://github.com/saleh-alhaddad"
+    icon: "fas fa-external-link-alt"
+    class: "resume-link"
+    target: "_blank"
+    rel: "noopener noreferrer"
+
+# Quick navigation for sidebar or footer
+quick:
+  - title: "Home"
+    url: "/"
+    icon: "fas fa-home"
+
+  - title: "About Me"
+    url: "/about"
+    icon: "fas fa-user"
+
+  - title: "Articles"
+    url: "/articles"
+    icon: "fas fa-blog"
+
+  - title: "Contact"
+    url: "/contact"
+    icon: "fas fa-envelope"

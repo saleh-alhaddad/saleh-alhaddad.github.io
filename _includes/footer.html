@@ -1,0 +1,28 @@
+<!-- Footer: columned metadata, ends with the closing line -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col">
+        <div class="l">ENGINEER</div>
+        <div class="v">{{ site.data.author.name }}</div>
+        <div class="v" style="color:var(--soft);font-size:13px;margin-top:4px">{{ site.data.author.tagline }}</div>
+      </div>
+      <div class="col">
+        <div class="l">LOCATION</div>
+        <div class="v">{{ site.data.author.location }}</div>
+        <div class="v" style="color:var(--soft);font-size:13px;margin-top:4px">Eligible to work: Remote | Hybrid | On-site</div>
+      </div>
+      <div class="col">
+        <div class="l">CONTACT</div>
+        <a href="mailto:{{ site.data.author.email }}">{{ site.data.author.email }}</a>
+      </div>
+      <div class="col">
+        <div class="l">SOCIAL</div>
+        <a href="{{ site.data.social.github.url }}" target="_blank" rel="noopener noreferrer">GitHub</a><br>
+        <a href="{{ site.data.social.linkedin.url }}" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
+        <a href="{{ site.data.social.medium.url }}" target="_blank" rel="noopener noreferrer">Medium</a>
+      </div>
+    </div>
+    <p class="closing">Payment systems that stay correct. Built with care in Hadramout.</p>
+  </div>
+</footer>

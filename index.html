@@ -1,0 +1,125 @@
+---
+layout: modern
+# No `title` on purpose: the homepage <title> should be the site title alone
+# ("Saleh Alhaddad | Senior Backend Engineer"), not "Page - Site".
+description: Senior Backend Engineer specializing in Ruby on Rails, payment systems, and billing infrastructure. Rails core contributor.
+---
+
+<div class="wrap">
+  <!-- Hero -->
+  <div class="hero">
+    <p class="eyebrow rise">WHO I AM</p>
+    <p class="hey rise" style="animation-delay:.06s">Hey, I'm <b>Saleh</b>.</p>
+    <h1 class="rise" style="animation-delay:.12s">Building backend systems that stay correct when <em>real money moves</em>.</h1>
+    <p class="sub rise" style="animation-delay:.2s">
+      Senior Backend Engineer: Ruby on Rails, payment infrastructure, subscription billing,
+      and the PostgreSQL performance work that keeps it all fast. Rails core contributor.
+    </p>
+    <div class="chips rise" style="animation-delay:.28s">
+      <span class="chip">IDEMPOTENCY</span><span class="chip">RECONCILIATION</span>
+      <span class="chip">WEBHOOKS</span><span class="chip">POSTGRESQL</span>
+      <span class="chip">RAILS CORE</span>
+    </div>
+    <div class="cta-row rise" style="animation-delay:.36s">
+      <a class="btn primary" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+      <a class="btn ghost" href="{{ '/articles' | relative_url }}">Read my writing</a>
+    </div>
+  </div>
+
+  <!-- Pass card -->
+  <div class="passwrap">
+    <p class="eyebrow" style="text-align:center">PASS CARD</p>
+    <span class="note n1">RAILS CORE CONTRIBUTOR</span>
+    <span class="note n2">TECHNICAL WRITER</span>
+    <span class="note n3">POSTGRESQL TUNER</span>
+    <span class="note n4">MENTOR</span>
+    <div class="pass rise" style="animation-delay:.1s">
+      <div class="ph">PASS CARD</div>
+      <table>
+        <tr><td class="k">NAME</td><td class="v">{{ site.data.author.name | upcase }}</td></tr>
+        <tr><td class="k">ROLE</td><td class="v">SENIOR BACKEND ENGINEER</td></tr>
+        <tr><td class="k">STACK</td><td class="v">RAILS · POSTGRESQL · AWS</td></tr>
+        <tr><td class="k">DOMAIN</td><td class="v">PAYMENTS &amp; BILLING</td></tr>
+        <tr><td class="k">EXPERIENCE</td><td class="v"><span class="calc-years" data-career-start="{{ site.data.author.career_start }}">{% include experience-years.html %}</span>+ YEARS</td></tr>
+        <tr><td class="k">AVAILABILITY</td><td class="v">REMOTE | HYBRID | ON-SITE</td></tr>
+        <tr><td class="k">BASE</td><td class="v">HADRAMOUT, YEMEN · GMT+3</td></tr>
+      </table>
+      <div class="code">SA·RAILS·PGSQL·SQS·CHARGEBEE</div>
+    </div>
+  </div>
+
+  <!-- Selected work: small mentions, no case studies -->
+  <section id="work">
+    <div class="sec-head">
+      <span class="eyebrow">SELECTED WORK</span>
+      <span class="eyebrow" style="letter-spacing:.14em">JISR · SUBSCRIPTION SAAS</span>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="t">Virtual IBAN &amp; Bank Transfer Rails</div>
+        <div class="d">Per-organization account provisioning across two banking providers: idempotent issuance, graduated retries with backoff, async fallback.</div>
+        <div class="tags"><span class="tag">FINTECH</span><span class="tag">IDEMPOTENCY</span><span class="tag">SQS</span></div>
+      </div>
+      <div class="card">
+        <div class="t">Payment Retry &amp; Idempotency</div>
+        <div class="d">Exponential backoff on Chargebee payments, safe to retry by construction: no double charges, ever.</div>
+        <div class="tags"><span class="tag">BILLING</span><span class="tag">CHARGEBEE</span></div>
+      </div>
+      <div class="card">
+        <div class="t">Dunning &amp; Payment Recovery</div>
+        <div class="d">Failed-payment pipeline: batched status reconciliation, notifications, automated offline-billing fallback.</div>
+        <div class="tags"><span class="tag">PAYMENTS</span><span class="tag">RECOVERY</span></div>
+      </div>
+      <div class="card">
+        <div class="t">Subscription Churn-Save Funnel</div>
+        <div class="d">Tier-based retention offers applied transactionally, one offer per account, with a clean revert path.</div>
+        <div class="tags"><span class="tag">GROWTH</span><span class="tag">RETENTION</span></div>
+      </div>
+      <div class="card">
+        <div class="t">Event-Sourced Audit Log</div>
+        <div class="d">Subscription history with jsonb snapshots, async SQS writes, and partial composite indexes.</div>
+        <div class="tags"><span class="tag">POSTGRESQL</span><span class="tag">EVENT SOURCING</span></div>
+      </div>
+      <div class="card">
+        <div class="t">CRM &amp; Analytics Integrations</div>
+        <div class="d">Bidirectional HubSpot sync and a Segment pipeline delivered over SQS with scheduled reconciliation.</div>
+        <div class="tags"><span class="tag">HUBSPOT</span><span class="tag">SEGMENT</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open source -->
+  <section id="oss">
+    <div class="sec-head"><span class="eyebrow">OPEN SOURCE</span></div>
+    <div class="oss">
+      <div>
+        <h3>Fixed <code>where.associated</code> in Rails core.</h3>
+        <p>Join types in complex ActiveRecord queries now stay what you wrote: predictable SQL for every app on Rails.</p>
+      </div>
+      <a class="badge" href="https://github.com/rails/rails/pull/51078" target="_blank" rel="noopener">PR #51078 · MERGED</a>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section id="writing">
+    <div class="sec-head">
+      <span class="eyebrow">WRITING</span>
+      <span class="eyebrow" style="letter-spacing:.14em">MEDIUM</span>
+    </div>
+    <a class="post" href="https://salehsalem.medium.com/optimizing-ruby-on-rails-app-for-high-performance-part-1-1fc7b9ee5c5" target="_blank" rel="noopener">
+      <span><span class="t">Optimizing Ruby on Rails apps for high performance</span><br>
+      <span class="d">Finding database bottlenecks, and what to do about them.</span></span>
+      <span class="cat">PERFORMANCE</span></a>
+    <a class="post" href="https://salehsalem.medium.com/how-to-benchmark-your-ruby-code-for-performance-optimization-608ab916f5d0" target="_blank" rel="noopener">
+      <span><span class="t">How to benchmark your Ruby code</span><br>
+      <span class="d">Measuring before optimizing, with Ruby's own tools.</span></span>
+      <span class="cat">TESTING</span></a>
+    <a class="post" href="https://salehsalem.medium.com/totp-using-ruby-on-rails-api-guide-d719033ceb64" target="_blank" rel="noopener">
+      <span><span class="t">TOTP with a Ruby on Rails API</span><br>
+      <span class="d">Time-based one-time passwords, end to end.</span></span>
+      <span class="cat">SECURITY</span></a>
+    <div class="cta-row">
+      <a class="btn ghost" href="{{ '/articles' | relative_url }}">All articles</a>
+    </div>
+  </section>
+</div>

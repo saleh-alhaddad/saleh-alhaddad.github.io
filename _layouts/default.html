@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: "Saleh Salem Alhaddad" }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | default: 'Senior Backend Engineer specializing in Ruby on Rails, payment systems, and billing infrastructure.' }}">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="{{ site.author.name | default: 'Saleh Salem Alhaddad' }}">
+    <meta name="keywords" content="Ruby on Rails, Senior Backend Engineer, Payment Systems, Billing Infrastructure, Chargebee, PostgreSQL, Yemen, Hadramout">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: 'Saleh Salem Alhaddad' }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.author.name | default: 'Saleh Salem Alhaddad' }}",
+      "jobTitle": "{{ site.author.bio | default: 'Senior Backend Engineer' }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "{{ site.author.linkedin }}",
+        "{{ site.author.github }}",
+        "{{ site.author.medium }}"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    Saleh Salem Alhaddad
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                    <a href="/about.html" class="nav-link {% if page.url contains 'about' %}active{% endif %}">About</a>
+                    <a href="/articles.html" class="nav-link {% if page.url contains 'articles' %}active{% endif %}">Articles</a>
+                    <a href="/contact.html" class="nav-link {% if page.url contains 'contact' %}active{% endif %}">Contact</a>
+                </nav>
+                
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name | default: "Saleh Salem Alhaddad" }}. Built with Jekyll & GitHub Pages.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/saleh-alhaddad" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/saleh-salem-alhaddad-9b7b2a149/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://salehsalem.medium.com" target="_blank" rel="noopener">Medium</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Theme Toggle Functionality
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            const currentTheme = html.getAttribute('data-theme');
+            
+            if (currentTheme === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Load saved theme
+        function loadTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.getElementById('nav');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+                nav.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTheme();
+            
+            // Add fade-in animation to sections
+            const sections = document.querySelectorAll('.section, .card, .article-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                    }
+                });
+            });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Handle system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+            if (!localStorage.getItem('theme')) {
+                loadTheme();
+            }
+        });
+    </script>
+</body>
+</html>
